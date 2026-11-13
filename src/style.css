@@ -1,0 +1,184 @@
+:root {
+    --blanco: #fff;
+    --primario: #61ecbc;
+    --negro: #182339;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+}
+.contenedor {
+    max-width: 80rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.titulo {
+    font-size: 3.8rem;
+    margin-top: 5rem;
+    line-height: .8;
+    color: var(--blanco);
+}
+.titulo span {
+    color: var(--primario);
+    display: block;
+    font-size: 4.4rem;
+}
+.contenido {
+    margin-top: 5rem;
+    padding: 6rem 2rem;
+    background-color: var(--blanco);
+    max-width: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.formulario,
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.formulario label {
+    color:  var(--negro);
+}
+.formulario select {
+    background-color: #ecebeb;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+.formulario [type="submit"] {
+    background-color: var(--primario);
+    color: var(--negro);
+    border: none;
+    padding: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+    margin-top: 2rem;
+}
+.formulario [type="submit"]:hover {
+    background-color: #0cb387;
+}
+
+.formulario [type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.contenedor-resultado h2 {
+    text-align: left;
+    font-size: 1.25 rem;
+    color: #64748b;
+    font-weight: 700;
+}
+
+
+
+/* Tarjeta principal de cotización */
+.resultado {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.imagen-cripto {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.cotizacion-principal {
+    min-width: 0;
+}
+
+.nombre-cripto {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+}
+
+.precio-actual {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 900;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.descripcion-precio {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-top: 0.5rem;
+}
+
+/* Indicadores del mercado */
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.indicador-label {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin: 0 0 0.5rem;
+}
+
+.indicador-valor {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.positivo {
+    color: #15803d;
+}
+
+.negativo {
+    color: #dc2626;
+}
+
+.fuente-datos {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    color: #64748b;
+    font-size: 1.2rem;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+    .resultado {
+        gap: 1rem;
+    }
+
+    .imagen-cripto {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .indicadores {
+        gap: 1.5rem 1rem;
+    }
+}
+
+
