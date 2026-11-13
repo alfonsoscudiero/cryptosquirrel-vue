@@ -6,7 +6,7 @@ CryptoSquirrel provides real-time-requested cryptocurrency quotations in multipl
 
 ## 🌐 Live Demo
 
-**Coming soon — Netlify deployment**
+[View CryptoSquirrel on Netlify](https://cryptosquirrel-vue.netlify.app/)
 
 ## ✨ Features
 
